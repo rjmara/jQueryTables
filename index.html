@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Multiplication Tables</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h2>Multiplication Tables Generator</h2>
+    <div id="mainContent">
+      <div id="formDiv">
+        <div id="leftElements">
+          <form id="appForm">
+            <table id="tableForm">
+              <tr>
+                <td>
+                  <label for="minColVal">Minimum Column Value</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    inputmode="numeric"
+                    id="minColVal"
+                    class="formVals"
+                    name="minColVal"
+                    value="1"
+                  />
+                </td>
+                <td>
+                  <div id="minColSlider" class="slider-values"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="minColVal">Minimum Row Value</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    inputmode="numeric"
+                    id="minRowVal"
+                    class="formVals"
+                    name="minRowVal"
+                    value="1"
+                  />
+                </td>
+                <td>
+                  <div id="minRowSlider" class="slider-values"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="minColVal">Maximum Column Value</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    inputmode="numeric"
+                    id="maxColVal"
+                    class="formVals"
+                    name="maxColVal"
+                    value="5"
+                  />
+                </td>
+                <td>
+                  <div id="maxColSlider" class="slider-values"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="minColVal">Maximum Row Value</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    inputmode="numeric"
+                    id="maxRowVal"
+                    class="formVals"
+                    name="maxRowVal"
+                    value="5"
+                  />
+                </td>
+                <td>
+                  <div id="maxRowSlider" class="slider-values"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="submit"
+                    id="regenerateButton"
+                    value="Regenerate Table"
+                  />
+                </td>
+              </tr>
+            </table>
+          </form>
+          <p id="error"></p>
+        </div>
+      </div>
+      <div id="tableSpace">
+        <ul id="tabs"></ul>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+    <link
+      href=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
